@@ -1,6 +1,5 @@
 # X-beagle-Mlops-Project
 
-<br>
 
 ### ❗️ Introduction
 X-Ray 데이터셋을 활용하여 AI/ML 및 클라우드 기술을 통한 YOLO 디텍션 서비스 구현
