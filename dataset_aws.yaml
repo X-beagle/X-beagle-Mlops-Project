@@ -1,0 +1,9 @@
+train: /home/ec2-user/SageMaker/aws_data/aws_dataset/train/
+val: /home/ec2-user/SageMaker/aws_data/aws_dataset/val/
+test: /home/ec2-user/SageMaker/aws_data/aws_dataset/test/
+nc: 42
+names: ['Hammer','SSD','Alcohol','Spanner','Axe','Awl','Throwing Knife','Firecracker','Thinner','Plier','Match',
+        'Smart Phone','Scissors','Tablet PC','Solid Fuel','Bat','Portable Gas','Nail Clippers','Knife','Metal Pipe',
+        'Electronic Cigarettes(Liquid)','Supplymentary Battery','Bullet','Gun Parts','USB','Liquid','Aerosol','Screwdriver',
+        'Chisel','Handcuffs','Lighter','HDD','Electronic Cigarettes','Battery','Gun','Laptop','Saw','Zippo Oil','Stun Gun',
+        'Camera','Camcorder','SD Card']
