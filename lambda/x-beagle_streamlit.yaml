@@ -1,0 +1,60 @@
+# 이 AWS SAM 템플릿은 함수 구성에서 생성되었습니다. 함수에 트리거가 하나 이상 있는 경우 이러한 트리거와 관련된 AWS 리소스가 이
+# 템플릿에 완전히 지정되어 있지 않으며 자리 표시자 값도 포함된다는 점에 유의하십시오. AWS Application Composer 또는 선호하는
+# IDE에서 이 템플릿을 열고 다른 AWS 리소스와 함께 서버리스 애플리케이션을 지정하도록 수정하십시오.
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An AWS Serverless Application Model template describing your function.
+Resources:
+  xbeaglestreamlit:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 3
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.12
+      Architectures:
+        - x86_64
+      EphemeralStorage:
+        Size: 512
+      EventInvokeConfig:
+        MaximumEventAgeInSeconds: 21600
+        MaximumRetryAttempts: 2
+      PackageType: Zip
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action:
+                - logs:CreateLogGroup
+              Resource: arn:aws:logs:ap-northeast-2:907729080149:*
+            - Effect: Allow
+              Action:
+                - logs:CreateLogStream
+                - logs:PutLogEvents
+              Resource:
+                - >-
+                  arn:aws:logs:ap-northeast-2:907729080149:log-group:/aws/lambda/x-beagle_streamlit:*
+            - Effect: Allow
+              Action:
+                - s3:Get*
+                - s3:List*
+                - s3:Describe*
+                - s3-object-lambda:Get*
+                - s3-object-lambda:List*
+              Resource: '*'
+            - Effect: Allow
+              Action:
+                - s3:*
+                - s3-object-lambda:*
+              Resource: '*'
+      SnapStart:
+        ApplyOn: None
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /predict
+            Method: ANY
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: Auto
