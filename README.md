@@ -1,4 +1,4 @@
-# AIRPORT X-RAY AI DETECTION SharkHolmes 2024 AWS AI&MLOps Application(Advanced)
+# AIRPORT X-RAY AI DETECTION 2024 AWS AI&MLOps Application(Advanced)
 공힝 X-Ray 데이터셋을 활용한 YOLO 디텍션 서비스 구현
 
 # ❗️ Introduction
