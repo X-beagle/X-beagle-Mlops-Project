@@ -9,7 +9,13 @@ X-Ray 데이터셋을 활용하여 AI/ML 및 클라우드 기술을 통한 YOLO 
 
 <br>
 <br>
-![3](https://github.com/user-attachments/assets/6ebc99d4-a61a-42fe-8a0a-e694a1c0a045)
+
+
+
+![3](https://github.com/user-attachments/assets/09e0a2dc-095d-40a3-8491-ef51f23c76ea)
+
+
+
 ![4](https://github.com/user-attachments/assets/71f382f2-7e6c-4ffc-9cfa-1dcd3cf2340a)
 ![5](https://github.com/user-attachments/assets/8c066c03-3041-4a2f-a30b-730f4fe30286)
 ![6](https://github.com/user-attachments/assets/85ebf5e1-9572-4546-a6c5-26ad55d95e6a)
