@@ -1,5 +1,5 @@
 # AIRPORT X-RAY AI DETECTION 
-공힝 X-Ray 데이터셋을 활용한 YOLO 디텍션 서비스
+공형 X-Ray 데이터셋을 활용한 YOLO 디텍션 서비스
 <br>
 <br>
 
